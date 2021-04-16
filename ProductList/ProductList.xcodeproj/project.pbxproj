@@ -9,8 +9,33 @@
 /* Begin PBXBuildFile section */
 		221CD2E52629852000D29B5A /* ProductList.h in Headers */ = {isa = PBXBuildFile; fileRef = 221CD2E32629852000D29B5A /* ProductList.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		221CD2F42629860400D29B5A /* ProductListDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221CD2F32629860400D29B5A /* ProductListDummy.swift */; };
+		221CD308262987FD00D29B5A /* Core.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 221CD304262987CE00D29B5A /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		22938F88B7FFE6775D06C005 /* Pods_ProductList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 694DFEB3751E67CAB4DA76ED /* Pods_ProductList.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		221CD303262987CE00D29B5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 221CD2FF262987CE00D29B5A /* Core.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 221CD2AB26297B2800D29B5A;
+			remoteInfo = Core;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		221CD305262987D800D29B5A /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				221CD308262987FD00D29B5A /* Core.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		221CD2E02629852000D29B5A /* ProductList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ProductList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -18,6 +43,7 @@
 		221CD2E42629852000D29B5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		221CD2F32629860400D29B5A /* ProductListDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListDummy.swift; sourceTree = "<group>"; };
 		221CD2F62629864800D29B5A /* ProductListPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ProductListPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		221CD2FF262987CE00D29B5A /* Core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Core.xcodeproj; path = ../Core/Core.xcodeproj; sourceTree = "<group>"; };
 		694DFEB3751E67CAB4DA76ED /* Pods_ProductList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProductList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BAD766706F479B2FF4D05E5 /* Pods-ProductList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProductList.debug.xcconfig"; path = "Target Support Files/Pods-ProductList/Pods-ProductList.debug.xcconfig"; sourceTree = "<group>"; };
 		C25959A14C307E60DA53624B /* Pods-ProductList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProductList.release.xcconfig"; path = "Target Support Files/Pods-ProductList/Pods-ProductList.release.xcconfig"; sourceTree = "<group>"; };
@@ -46,6 +72,7 @@
 		221CD2D62629852000D29B5A = {
 			isa = PBXGroup;
 			children = (
+				221CD2FE262987BE00D29B5A /* Dependencies */,
 				221CD2F62629864800D29B5A /* ProductListPlayground.playground */,
 				221CD2E22629852000D29B5A /* ProductList */,
 				221CD2E12629852000D29B5A /* Products */,
@@ -70,6 +97,22 @@
 				221CD2E42629852000D29B5A /* Info.plist */,
 			);
 			path = ProductList;
+			sourceTree = "<group>";
+		};
+		221CD2FE262987BE00D29B5A /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				221CD2FF262987CE00D29B5A /* Core.xcodeproj */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		221CD300262987CE00D29B5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				221CD304262987CE00D29B5A /* Core.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		D1F4CDD3F9E330000C8BF5BD /* Pods */ = {
@@ -105,6 +148,7 @@
 				221CD2DC2629852000D29B5A /* Sources */,
 				221CD2DD2629852000D29B5A /* Frameworks */,
 				221CD2DE2629852000D29B5A /* Resources */,
+				221CD305262987D800D29B5A /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,12 +184,28 @@
 			mainGroup = 221CD2D62629852000D29B5A;
 			productRefGroup = 221CD2E12629852000D29B5A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 221CD300262987CE00D29B5A /* Products */;
+					ProjectRef = 221CD2FF262987CE00D29B5A /* Core.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				221CD2DF2629852000D29B5A /* ProductList */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		221CD304262987CE00D29B5A /* Core.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Core.framework;
+			remoteRef = 221CD303262987CE00D29B5A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		221CD2DE2629852000D29B5A /* Resources */ = {

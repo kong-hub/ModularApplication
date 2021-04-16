@@ -6,9 +6,11 @@
 //
 
 import Foundation
+import Core
 
 public class ProductListDummy {
     public init() {
         print("Initialize ProductListDummy")
+        let coreDummy = CoreDummy()
     }
 }
