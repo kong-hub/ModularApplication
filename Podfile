@@ -23,3 +23,13 @@ target 'Application' do
     project 'Application/Application.project'
     application_pods
 end
+
+#feature - PLP
+def product_list_pods
+    pod 'RxSwift'
+end
+
+target 'ProductList' do
+    project 'ProductList/ProductList.project'
+    product_list_pods
+end
