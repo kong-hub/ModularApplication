@@ -6,9 +6,10 @@
 //
 
 import Foundation
+import Core
 
 public class AppDummy {
     public init() {
-        
+        let coreDummy = CoreDummy()
     }
 }

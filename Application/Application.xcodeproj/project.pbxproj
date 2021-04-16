@@ -14,8 +14,33 @@
 		221CD28C262973F900D29B5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 221CD28B262973F900D29B5A /* Assets.xcassets */; };
 		221CD28F262973F900D29B5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 221CD28D262973F900D29B5A /* LaunchScreen.storyboard */; };
 		221CD2CB2629834F00D29B5A /* AppDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221CD2CA2629834F00D29B5A /* AppDummy.swift */; };
+		221CD2D52629842100D29B5A /* Core.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 221CD2D3262983DB00D29B5A /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F9B4A1BDEA50AE20BF9ADF4B /* Pods_Application.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6AEE0ABC2A2459E8FD5E30 /* Pods_Application.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		221CD2D2262983DB00D29B5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 221CD2CE262983DB00D29B5A /* Core.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 221CD2AB26297B2800D29B5A;
+			remoteInfo = Core;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		221CD2D4262983F000D29B5A /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				221CD2D52629842100D29B5A /* Core.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		221CD27F262973F800D29B5A /* Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Application.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,6 +52,7 @@
 		221CD28E262973F900D29B5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		221CD290262973F900D29B5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		221CD2CA2629834F00D29B5A /* AppDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDummy.swift; sourceTree = "<group>"; };
+		221CD2CE262983DB00D29B5A /* Core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Core.xcodeproj; path = ../Core/Core.xcodeproj; sourceTree = "<group>"; };
 		7E2CD8A664CE7B46BF8F35BB /* Pods-Application.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Application.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-Application/Pods-Application.debug.xcconfig"; sourceTree = "<group>"; };
 		CF1D8ED68A121BD88479345D /* Pods-Application.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Application.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-Application/Pods-Application.release.xcconfig"; sourceTree = "<group>"; };
 		CF6AEE0ABC2A2459E8FD5E30 /* Pods_Application.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Application.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +73,7 @@
 		221CD276262973F800D29B5A = {
 			isa = PBXGroup;
 			children = (
+				221CD2CD262983B500D29B5A /* Dependencies */,
 				221CD281262973F800D29B5A /* Application */,
 				221CD280262973F800D29B5A /* Products */,
 				D2310747242C844999FF7D9B /* Pods */,
@@ -75,6 +102,22 @@
 				221CD290262973F900D29B5A /* Info.plist */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		221CD2CD262983B500D29B5A /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				221CD2CE262983DB00D29B5A /* Core.xcodeproj */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		221CD2CF262983DB00D29B5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				221CD2D3262983DB00D29B5A /* Core.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		D2310747242C844999FF7D9B /* Pods */ = {
@@ -106,6 +149,7 @@
 				221CD27C262973F800D29B5A /* Frameworks */,
 				221CD27D262973F800D29B5A /* Resources */,
 				E0E32C2A1F701CD0C81FEC1E /* [CP] Embed Pods Frameworks */,
+				221CD2D4262983F000D29B5A /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -141,12 +185,28 @@
 			mainGroup = 221CD276262973F800D29B5A;
 			productRefGroup = 221CD280262973F800D29B5A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 221CD2CF262983DB00D29B5A /* Products */;
+					ProjectRef = 221CD2CE262983DB00D29B5A /* Core.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				221CD27E262973F800D29B5A /* Application */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		221CD2D3262983DB00D29B5A /* Core.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Core.framework;
+			remoteRef = 221CD2D2262983DB00D29B5A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		221CD27D262973F800D29B5A /* Resources */ = {
