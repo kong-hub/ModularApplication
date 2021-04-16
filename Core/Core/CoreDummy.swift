@@ -10,6 +10,7 @@ import RxSwift
 
 public class CoreDummy {
     public init() {
+        print("initialize Core...")
     }
     
 }

@@ -17,6 +17,7 @@
 		221CD2AE26297B2800D29B5A /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
 		221CD2AF26297B2800D29B5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		221CD2B726297C3E00D29B5A /* CoreDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDummy.swift; sourceTree = "<group>"; };
+		221CD2C32629825200D29B5A /* CorePlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CorePlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		27BAAEACFE6DB833A5B0FBD6 /* Pods-Core.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Core.release.xcconfig"; path = "Target Support Files/Pods-Core/Pods-Core.release.xcconfig"; sourceTree = "<group>"; };
 		77974D384DD705C2BCC86823 /* Pods-Core.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Core.debug.xcconfig"; path = "Target Support Files/Pods-Core/Pods-Core.debug.xcconfig"; sourceTree = "<group>"; };
 		B1CC655B075BCBF5BC6E248F /* Pods_Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,6 +38,7 @@
 		221CD2A126297B2800D29B5A = {
 			isa = PBXGroup;
 			children = (
+				221CD2C32629825200D29B5A /* CorePlayground.playground */,
 				221CD2AD26297B2800D29B5A /* Core */,
 				221CD2AC26297B2800D29B5A /* Products */,
 				A00F1EBDAEB49A960C79556C /* Pods */,
